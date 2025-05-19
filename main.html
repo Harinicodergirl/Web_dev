@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mystyle.css">
+</head>
+<body>
+    <!--Today's tasks:
+        1. create a div called main, conatining  page, content 
+        2. flex direction of main should be row
+        3. Inside content: create navbar , and a div for each project and lastly a div for certificate, flex dirn of content:coloumn
+        4. Navbar shd contain: all projects name: Projects that we have planned for vacation.
+        5. Each project should have a description, github profile link
+    -->
+        <div class="main">
+            <!--Add page over here-->
+            <div class="page">
+                <div class="Name"><h1>Harini Kannathal</h1></div>
+                <div class="photo"><!--Add figure for img and figcaption for bio-->
+                        <div class="img"><img src="./assets/Abtme.jpg"></div>
+                        <div class="caption"><p>Hey all!, this is Harini, first year at IIIT KOttayam. Learning web development, and soon planning to switch to VLSI Design</p></div>
+                </div>
+                <div class="links">
+                    <div class="Linkedin"><a href="https://www.linkedin.com/in/harini-kannathal-s-2a1027316?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="./assets/linkedin.png"></a></div>
+                    <div class="Instagram"><a href="https://www.instagram.com/harini_simplyme/" target="_blank"><img src="./assets/instagram.jpeg"></a></div>
+                    <div class="Blogger"><a href="https://qclll.blogspot.com/" target="_blank"><img src="./assets/blogger.jpeg"></a></div>
+                </div>
+            </div>
+            <!--Page added-->
+            <div class="content">
+                <div class="navbar">
+                    <a href="#Project1">Bluetooth communication</a>
+                    <a href="#Project2">Home Automation with ESP32, DHT11, Servo, and Ultrasonic Sensor</a>
+                    <a href="#Project4">Reading Data from DHT11 and Displaying in Node-RED Dashboard</a>
+                    <a href="#Certificate">Certificate</a>
+                </div>
+            <div class="scroll">
+                <div class="project">
+                    <div id="Project1"></div>
+                    <div class="title"><h3>Bluetooth Communication</h3></div>
+                    <div class="desc">This project demonstrates Bluetooth communication between a mobile device and a laptop using an ESP32 microcontroller. It enables the exchange of data over Bluetooth, allowing the devices to connect seamlessly for applications such as remote control, file transfer, or data logging. The project utilizes the ESP32’s built-in Bluetooth capabilities to establish a reliable connection between the mobile and laptop.</div>
+                    <div class="github"><a><!--Need to put GitHub link of Bluetooth over here--></a></div>
+                </div><!--Project 1 over here: Short descriotiion and github link in the form of image/icon(seperate div for description and icon)-->
+                <div class="project">
+                    <div id="Project2">
+                        <div class="title"><h3>Home Automation with ESP32, DHT11, Servo, and Ultrasonic Sensor</h3></div>
+                        <div class="desc">This project simulates a home automation system where a servo motor acts as a door, controlled by ultrasonic sensor readings. The ESP32 microcontroller integrates with a DHT11 sensor to monitor environmental temperature and humidity. Based on the distance measured by the ultrasonic sensor, the servo motor opens or closes the door, providing an automated solution for managing access and environmental conditions in a smart home setup.</div>
+                        <div class="github"><!--Need to update Home automation with Blynk IoT--></div>
+                    </div>
+                </div><!--Project 2 over here: Short descriotiion and github link in the form of image/icon(seperate div for description and icon)-->
+                
+                <div class="project">
+                    <div id="Project4">
+                        <div class="title"><h3>Reading Data from DHT11 and Displaying in Node-RED Dashboard</h3></div>
+                        <div class="desc">This project reads temperature and humidity data from a DHT11 sensor using an ESP32 and sends the values to the serial port. The data is then processed in Node-RED and displayed in a custom dashboard. This setup allows real-time monitoring of environmental conditions, with the data presented visually in charts and gauges, offering an intuitive IoT-based solution for tracking temperature and humidity.</div>
+                        <div class="github"><!--Update the Node-Red code over here--></div>
+                    </div>
+                </div><!--Project 4 over here: Short descriotiion and github link in the form of image/icon(seperate div for description and icon)-->
+                <div class="cetificate">
+                    <div id="Certificate"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
